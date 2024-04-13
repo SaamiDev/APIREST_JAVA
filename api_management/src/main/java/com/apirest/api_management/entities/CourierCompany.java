@@ -19,18 +19,17 @@ public class CourierCompany {
     @Column(name = "image_name")
     private String imageName;
 
-    @OneToMany(mappedBy  = "courierCompany", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "courierCompany", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Order> orders = new ArrayList<>();
 
 
-
     @PrePersist
-    private void onCreate(){
+    private void onCreate() {
         setCompanyId();
     }
 
     private void setCompanyId() {
-          companyId = "COMPANY_" + UUID.randomUUID() + "_" + System.currentTimeMillis();
+        companyId = "COMPANY_" + UUID.randomUUID() + "_" + System.currentTimeMillis();
     }
 
 }
