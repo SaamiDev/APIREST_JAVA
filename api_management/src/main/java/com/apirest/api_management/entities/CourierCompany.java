@@ -1,4 +1,4 @@
-package api_management.src.main.java.com.apirest.api_management.Entities;
+package com.apirest.api_management.entities;
 
 import javax.persistence.*;
 import java.util.ArrayList;

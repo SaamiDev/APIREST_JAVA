@@ -1,4 +1,4 @@
-package api_management.src.main.java.com.apirest.api_management.DTOs;
+package com.apirest.api_management.DTOs;
 
 import api_management.src.main.java.com.apirest.api_management.Entities.Enums.OrderStatus;
 
@@ -74,7 +74,11 @@ public class OrderDTO {
         this.userDTO = userDTO;
     }
 
-    public api_management.src.main.java.com.apirest.api_management.DTOs.CourierCompanyDTO getCourierCompanyDTO() { return CourierCompanyDTO; }
+    public CourierCompanyDTO getCourierCompanyDTO() {
+        return CourierCompanyDTO;
+    }
 
-    public void setCourierCompanyDTO(api_management.src.main.java.com.apirest.api_management.DTOs.CourierCompanyDTO courierCompanyDTO) { CourierCompanyDTO = courierCompanyDTO; }
+    public void setCourierCompanyDTO(CourierCompanyDTO courierCompanyDTO) {
+        CourierCompanyDTO = courierCompanyDTO;
+    }
 }

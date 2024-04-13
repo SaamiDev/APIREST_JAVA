@@ -1,12 +1,10 @@
-package api_management.src.main.java.com.apirest.api_management.Entities;
+package com.apirest.api_management.entities;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Entity
-@Table(name= "user")
+@Table(name = "users")
 public class User {
 
     @Id
@@ -22,7 +20,37 @@ public class User {
     @Column(name = "dni")
     private Long dni;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    List<Order> orders = new ArrayList<>();
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurnames() {
+        return surnames;
+    }
+
+    public void setSurnames(String surnames) {
+        this.surnames = surnames;
+    }
+
+    public Long getDni() {
+        return dni;
+    }
+
+    public void setDni(Long dni) {
+        this.dni = dni;
+    }
+
 
 }

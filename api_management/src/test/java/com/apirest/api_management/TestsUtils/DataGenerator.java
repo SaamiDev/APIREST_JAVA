@@ -1,7 +1,10 @@
 package com.apirest.api_management.TestsUtils;
 
-public class RandomDni {
+import com.github.javafaker.Faker;
 
+public class DataGenerator {
+
+    private static final Faker faker = new Faker();
     public static Long getRandomDni() {
         long num = (long) (Math.random() * 100000000L);
 
@@ -10,4 +13,9 @@ public class RandomDni {
 
         return Long.parseLong(dniFormated);
     }
+
+    public static String getRandomName() { return faker.name().firstName(); }
+
+    public static String getRandomSurname() { return faker.name().lastName(); }
+
 }

@@ -1,4 +1,4 @@
-package api_management.src.main.java.com.apirest.api_management.DTOs;
+package com.apirest.api_management.DTOs;
 
 import java.util.ArrayList;
 import java.util.List;

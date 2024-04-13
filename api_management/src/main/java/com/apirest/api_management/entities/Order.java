@@ -1,4 +1,4 @@
-package api_management.src.main.java.com.apirest.api_management.Entities;
+package com.apirest.api_management.entities;
 
 import api_management.src.main.java.com.apirest.api_management.Entities.Enums.OrderStatus;
 
@@ -14,7 +14,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name= "order_id" , unique = true, updatable = false, nullable = false)
+    @Column(name = "order_id", unique = true, updatable = false, nullable = false)
     private String customUniqueId;
 
     @Column(name = "order_desc")
@@ -36,9 +36,11 @@ public class Order {
     private CourierCompany courierCompany;
 
 
+    private void setCustomUniqueId() {
+        customUniqueId = "ORDER_" + UUID.randomUUID() + "_" + System.currentTimeMillis();
+    }
 
-    private void setCustomUniqueId() { customUniqueId = "ORDER_" + UUID.randomUUID() + "_" + System.currentTimeMillis(); }
-    private  void setRegistration_date() {
+    private void setRegistration_date() {
         registrationDate = LocalDateTime.now();
     }
 
