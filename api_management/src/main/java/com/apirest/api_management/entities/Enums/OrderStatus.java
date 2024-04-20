@@ -1,4 +1,4 @@
-package api_management.src.main.java.com.apirest.api_management.Entities.Enums;
+package com.apirest.api_management.entities.Enums;
 
 public enum OrderStatus {
     OUTSIDE, // Implicitamente 0

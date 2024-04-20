@@ -1,8 +1,11 @@
 package com.apirest.api_management.entities;
 
-import api_management.src.main.java.com.apirest.api_management.Entities.Enums.OrderStatus;
+//import api_management.src.main.java.com.apirest.api_management.Entities.Enums.OrderStatus;
 
 import javax.persistence.*;
+
+import com.apirest.api_management.entities.Enums.OrderStatus;
+
 import java.time.LocalDateTime;
 import java.util.UUID;
 
