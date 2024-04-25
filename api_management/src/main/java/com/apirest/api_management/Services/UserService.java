@@ -7,6 +7,8 @@ import com.apirest.api_management.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 /**
  * Esta clase proporciona servicios relacionados con la gestión de usuarios.
  * Utiliza UserRepository para interactuar con la base de datos y UserMapper para
@@ -20,6 +22,8 @@ public class UserService {
      * y realizar operaciones CRUD relacionadas con la entidad User.
      */
     private final UserRepository userRepository;
+
+
 
     /**
      * Mapper que proporciona métodos para transformar objetos User a UserDTO y viceversa.
@@ -45,19 +49,30 @@ public class UserService {
      * @return DTO del usuario guardado.
      */
     public UserDTO saveUser(UserDTO userDTO) {
-        User user = userMapper.userDTOToUser(userDTO);
-        User savedUser = userRepository.save(user);
-        return userMapper.userToUserDTO(savedUser);
-    }
+        Optional<UserDTO> existingUser = userRepository.findByDni(userDTO.getUserDni());
 
+        if(existingUser.isPresent()) {
+            throw new IllegalArgumentException("El dni ya está registrado");
+        }
+
+        User user = userMapper.userDTOToUser(userDTO);
+        user = userRepository.save(user);
+
+
+        return userMapper.userToUserDTO(user);
+    }
+/*
     /**
      * Recupera un usuario por su DNI.
      *
      * @param dni DNI del usuario a buscar.
      * @return DTO del usuario encontrado o null si no se encuentra.
-     */
-    public UserDTO getUserByDni(Long dni) {
-        User user = userRepository.findByDni(dni);
-        return user != null ? userMapper.userToUserDTO(user) : null;
+
+    public UserDTO getUserByDni(UserDTO userDTO) {
+        // Busca al usuario por DNI y devuelve un Optional<User>
+        Optional<UserDTO> existingUser = userRepository.findByDni(userDTO.getUserDni());
+
+        return null;
     }
+    */
 }
