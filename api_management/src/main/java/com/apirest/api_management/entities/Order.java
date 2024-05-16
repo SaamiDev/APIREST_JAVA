@@ -2,10 +2,9 @@ package com.apirest.api_management.entities;
 
 //import api_management.src.main.java.com.apirest.api_management.Entities.Enums.OrderStatus;
 
-import javax.persistence.*;
-
 import com.apirest.api_management.entities.Enums.OrderStatus;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -37,6 +36,8 @@ public class Order {
     @OneToOne
     @JoinColumn(name = "courier_company_id")
     private CourierCompany courierCompany;
+
+
 
 
     private void setCustomUniqueId() {

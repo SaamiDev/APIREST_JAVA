@@ -1,0 +1,105 @@
+2024-05-06 21:50:29 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 14612 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-06 21:50:29 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-06 21:50:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-06 21:50:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2024-05-06 21:50:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-06 21:50:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-06 21:50:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-06 21:50:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-06 21:50:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-06 21:50:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 951 ms
+2024-05-06 21:50:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-06 21:50:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-06 21:50:30 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-06 21:50:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-06 21:50:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-06 21:50:31 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-06 21:50:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-06 21:50:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-06 21:50:31 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-06 21:50:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-06 21:50:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-06 21:50:32 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.759 seconds (JVM running for 3.119)
+2024-05-06 21:52:19 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-06 21:52:19 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-06 21:52:19 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-06 21:52:19 [http-nio-8090-exec-1] INFO  c.a.a.Controllers.UserController - Received request to save User: com.apirest.api_management.DTOs.UserDTO@2b038f11
+2024-05-06 21:52:19 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-06 21:52:19 [http-nio-8090-exec-1] ERROR c.a.a.Controllers.UserController - Error ocurred while saving User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-06 21:52:30 [http-nio-8090-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid numeric value: Leading zeroes not allowed; nested exception is com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed<EOL> at [Source: (PushbackInputStream); line: 4, column: 15]]
+2024-05-06 21:52:48 [http-nio-8090-exec-6] INFO  c.a.a.Controllers.UserController - Received request to save User: com.apirest.api_management.DTOs.UserDTO@61e13bfc
+2024-05-06 21:52:48 [http-nio-8090-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-06 21:52:48 [http-nio-8090-exec-6] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, name, surnames) 
+    values
+        (?, ?, ?)
+2024-05-06 21:52:48 [http-nio-8090-exec-6] INFO  c.a.a.Controllers.UserController - User saved successfully: com.apirest.api_management.DTOs.UserDTO@61e13bfc
+2024-05-06 22:34:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-06 22:34:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-06 22:34:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-06 22:34:47 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 3024 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-06 22:34:47 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-06 22:34:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-06 22:34:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2024-05-06 22:34:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-06 22:34:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-06 22:34:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-06 22:34:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-06 22:34:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-06 22:34:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 983 ms
+2024-05-06 22:34:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-06 22:34:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-06 22:34:49 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-06 22:34:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-06 22:34:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-06 22:34:49 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-06 22:34:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-06 22:34:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-06 22:34:50 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-06 22:34:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-06 22:34:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-06 22:34:50 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.821 seconds (JVM running for 3.183)
+2024-05-06 22:35:05 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-06 22:35:05 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-06 22:35:05 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-06 22:35:05 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to save User: UserDTO{userName = John, userSurname = Doe, userDni = 12344437}
+2024-05-06 22:35:05 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-06 22:35:05 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, name, surnames) 
+    values
+        (?, ?, ?)
+2024-05-06 22:35:05 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - User saved successfully: UserDTO{userName = John, userSurname = Doe, userDni = 12344437}
+2024-05-06 23:14:50 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m30s677ms258µs).

@@ -21,6 +21,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
  * La anotación @SpringBootTest indica a Spring Boot que busque una clase de configuración principal
  * (una con @SpringBootApplication, por ejemplo) y utilice esa para iniciar un contexto de aplicación Spring.
  */
+
+
 @SpringBootTest
 public class UserRepositoryTest {
 
@@ -76,10 +78,11 @@ public class UserRepositoryTest {
 
         // Guardar el UserDTO
         UserDTO savedUserDTO = userService.saveUser(userDTO);
-        Long savedUserDni = savedUserDTO.getUserDni();
+        String savedUserDni = savedUserDTO.getUserDni();
 
         // Obtener el UserDTO por su DNI usando el servicio
         UserDTO retrievedUserDTO = userService.getUserByDni(savedUserDni);
+
 
         // Asegurarse de que retrievedUserDTO no es null
         assertNotNull(retrievedUserDTO, "El usuario no se recuperó correctamente por DNI");

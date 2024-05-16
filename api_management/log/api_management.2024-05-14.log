@@ -1,0 +1,859 @@
+2024-05-14 19:53:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.apirest.api_management.ApiManagementApplicationTests], using SpringBootContextLoader
+2024-05-14 19:53:32 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.apirest.api_management.ApiManagementApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-05-14 19:53:32 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.apirest.api_management.ApiManagementApplicationTests]: ApiManagementApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-14 19:53:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.apirest.api_management.ApiManagementApplication for test class com.apirest.api_management.ApiManagementApplicationTests
+2024-05-14 19:53:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-05-14 19:53:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@aafcffa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6955cb39, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@235a0c16, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2b5f4d54, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5f7b97da, org.springframework.test.context.support.DirtiesContextTestExecutionListener@18b0930f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b7906b3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3a1dd365, org.springframework.test.context.event.EventPublishingTestExecutionListener@395b56bb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@256f8274, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@68044f4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@52d239ba, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@315f43d5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@68fa0ba8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6c5945a7]
+2024-05-14 19:53:33 [main] INFO  c.a.a.ApiManagementApplicationTests - Starting ApiManagementApplicationTests using Java 17.0.9 on DESKTOP-HM75IRF with PID 31192 (started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 19:53:33 [main] INFO  c.a.a.ApiManagementApplicationTests - No active profile set, falling back to default profiles: default
+2024-05-14 19:53:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 19:53:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
+2024-05-14 19:53:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 19:53:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 19:53:35 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 19:53:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 19:53:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 19:53:36 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 19:53:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 19:53:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 19:53:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 19:53:38 [main] INFO  c.a.a.ApiManagementApplicationTests - Started ApiManagementApplicationTests in 5.302 seconds (JVM running for 6.525)
+2024-05-14 19:53:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.apirest.api_management.Repositories.UserRepositoryTest], using SpringBootContextLoader
+2024-05-14 19:53:38 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.apirest.api_management.Repositories.UserRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-05-14 19:53:38 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.apirest.api_management.Repositories.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-14 19:53:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.apirest.api_management.ApiManagementApplication for test class com.apirest.api_management.Repositories.UserRepositoryTest
+2024-05-14 19:53:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-05-14 19:53:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b6939e1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d32f5db, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@69c51fdb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4aadf144, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@68a97fc1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@227fc322, org.springframework.test.context.transaction.TransactionalTestExecutionListener@63053b71, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4687c184, org.springframework.test.context.event.EventPublishingTestExecutionListener@65f3f9e2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@394950ad, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@73dd3a46, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@bae5e58, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@71e89a26, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@257708e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@18c26588]
+2024-05-14 19:53:39 [main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 19:53:39 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, name, surnames) 
+    values
+        (?, ?, ?)
+2024-05-14 19:53:39 [main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 19:53:39 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, name, surnames) 
+    values
+        (?, ?, ?)
+2024-05-14 19:53:39 [main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 19:53:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 19:53:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 19:53:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 19:53:49 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 28648 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 19:53:49 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 19:53:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 19:53:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2024-05-14 19:53:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 19:53:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 19:53:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 19:53:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 19:53:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 19:53:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1026 ms
+2024-05-14 19:53:51 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 19:53:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 19:53:51 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 19:53:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 19:53:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 19:53:51 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 19:53:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 19:53:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 19:53:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 19:53:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 19:53:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 19:53:52 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.952 seconds (JVM running for 3.333)
+2024-05-14 19:55:13 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 19:55:13 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 19:55:13 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 19:55:13 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 12344437
+2024-05-14 19:55:13 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 19:55:13 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 19:58:25 [http-nio-8090-exec-4] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 27527377
+2024-05-14 19:58:25 [http-nio-8090-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 19:58:25 [http-nio-8090-exec-4] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 20:31:40 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 20:31:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 20:31:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 20:31:50 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 21764 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 20:31:50 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 20:31:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 20:31:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2024-05-14 20:31:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 20:31:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 20:31:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 20:31:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 20:31:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 20:31:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1035 ms
+2024-05-14 20:31:51 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 20:31:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 20:31:51 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 20:31:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 20:31:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 20:31:51 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 20:31:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 20:31:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 20:31:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 20:31:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 20:31:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 20:31:53 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 3.16 seconds (JVM running for 3.562)
+2024-05-14 20:32:28 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 20:32:28 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 20:32:28 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 20:32:28 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 27527377
+2024-05-14 20:32:28 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 20:32:28 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 20:33:23 [http-nio-8090-exec-4] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 27527377
+2024-05-14 20:33:23 [http-nio-8090-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 20:33:23 [http-nio-8090-exec-4] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 20:36:49 [http-nio-8090-exec-6] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 27527377
+2024-05-14 20:36:49 [http-nio-8090-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 20:36:49 [http-nio-8090-exec-6] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 20:36:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 20:36:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 20:36:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 20:37:08 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 12340 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 20:37:08 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 20:37:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 20:37:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2024-05-14 20:37:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 20:37:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 20:37:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 20:37:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 20:37:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 20:37:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 959 ms
+2024-05-14 20:37:09 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 20:37:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 20:37:09 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 20:37:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 20:37:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 20:37:09 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 20:37:10 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 20:37:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 20:37:10 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 20:37:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 20:37:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 20:37:10 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.785 seconds (JVM running for 3.146)
+2024-05-14 20:37:24 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 20:37:24 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 20:37:24 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 20:37:24 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 27527377
+2024-05-14 20:37:24 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 20:37:25 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:14:34 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 17908 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:14:34 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:14:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:14:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:14:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:14:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:14:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:14:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:14:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:14:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1260 ms
+2024-05-14 23:14:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:14:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:14:36 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:14:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:14:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:14:36 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:14:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:14:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:14:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:14:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:14:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:14:37 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 3.681 seconds (JVM running for 4.151)
+2024-05-14 23:16:40 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:16:40 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:16:40 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-14 23:16:40 [http-nio-8090-exec-1] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 27527377
+2024-05-14 23:16:40 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:16:40 [http-nio-8090-exec-1] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:18:20 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:18:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:18:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:18:33 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 18512 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:18:33 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:18:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:18:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:18:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:18:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:18:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:18:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:18:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:18:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1004 ms
+2024-05-14 23:18:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:18:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:18:35 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:18:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:18:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:18:35 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:18:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:18:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:18:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:18:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:18:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:18:36 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.917 seconds (JVM running for 3.289)
+2024-05-14 23:18:46 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:18:46 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:18:46 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 23:18:46 [http-nio-8090-exec-1] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 27527377
+2024-05-14 23:18:46 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:18:46 [http-nio-8090-exec-1] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:19:49 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:19:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:19:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:20:03 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 16180 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:20:03 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:20:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:20:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:20:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:20:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:20:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:20:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:20:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:20:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 993 ms
+2024-05-14 23:20:04 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:20:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:20:04 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:20:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:20:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:20:04 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:20:05 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:20:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:20:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:20:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:20:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:20:05 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.889 seconds (JVM running for 3.265)
+2024-05-14 23:21:21 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:21:21 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:21:21 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-14 23:21:21 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 27527377
+2024-05-14 23:21:21 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:21:21 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:21:50 [http-nio-8090-exec-4] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 2752737
+2024-05-14 23:21:50 [http-nio-8090-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:21:50 [http-nio-8090-exec-4] INFO  c.a.a.Services.UserService - User with DNI 2752737 deleted successfully
+2024-05-14 23:21:50 [http-nio-8090-exec-4] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 2752737
+2024-05-14 23:25:23 [http-nio-8090-exec-7] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 876026
+2024-05-14 23:25:23 [http-nio-8090-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:25:23 [http-nio-8090-exec-7] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:25:26 [http-nio-8090-exec-9] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 87602
+2024-05-14 23:25:26 [http-nio-8090-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:25:26 [http-nio-8090-exec-9] INFO  c.a.a.Services.UserService - User with DNI 87602 deleted successfully
+2024-05-14 23:25:26 [http-nio-8090-exec-9] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 87602
+2024-05-14 23:25:40 [http-nio-8090-exec-10] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 8760
+2024-05-14 23:25:40 [http-nio-8090-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:25:40 [http-nio-8090-exec-10] INFO  c.a.a.Services.UserService - User with DNI 8760 deleted successfully
+2024-05-14 23:25:40 [http-nio-8090-exec-10] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 8760
+2024-05-14 23:26:28 [http-nio-8090-exec-1] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 8760
+2024-05-14 23:26:28 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:26:28 [http-nio-8090-exec-1] INFO  c.a.a.Services.UserService - User with DNI 8760 deleted successfully
+2024-05-14 23:26:28 [http-nio-8090-exec-1] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 8760
+2024-05-14 23:26:30 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 8760
+2024-05-14 23:26:30 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:26:30 [http-nio-8090-exec-2] INFO  c.a.a.Services.UserService - User with DNI 8760 deleted successfully
+2024-05-14 23:26:30 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 8760
+2024-05-14 23:26:31 [http-nio-8090-exec-3] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 8760
+2024-05-14 23:26:31 [http-nio-8090-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:26:31 [http-nio-8090-exec-3] INFO  c.a.a.Services.UserService - User with DNI 8760 deleted successfully
+2024-05-14 23:26:31 [http-nio-8090-exec-3] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 8760
+2024-05-14 23:26:32 [http-nio-8090-exec-4] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 8760
+2024-05-14 23:26:32 [http-nio-8090-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:26:32 [http-nio-8090-exec-4] INFO  c.a.a.Services.UserService - User with DNI 8760 deleted successfully
+2024-05-14 23:26:32 [http-nio-8090-exec-4] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 8760
+2024-05-14 23:30:12 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:30:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:30:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:30:21 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 5212 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:30:21 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:30:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:30:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:30:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:30:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:30:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:30:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:30:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:30:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 986 ms
+2024-05-14 23:30:22 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:30:22 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:30:22 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:30:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:30:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:30:22 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:30:23 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:30:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:30:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:30:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:30:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:30:23 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.826 seconds (JVM running for 3.208)
+2024-05-14 23:31:29 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:31:29 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:31:29 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 23:31:29 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 876026
+2024-05-14 23:31:29 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:31:29 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:32:35 [http-nio-8090-exec-4] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 87602
+2024-05-14 23:32:35 [http-nio-8090-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:32:35 [http-nio-8090-exec-4] ERROR c.a.a.Services.UserService - User with DNI 87602 not found
+2024-05-14 23:32:43 [http-nio-8090-exec-6] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 8760
+2024-05-14 23:32:43 [http-nio-8090-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:32:43 [http-nio-8090-exec-6] ERROR c.a.a.Services.UserService - User with DNI 8760 not found
+2024-05-14 23:32:45 [http-nio-8090-exec-8] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 87602
+2024-05-14 23:32:45 [http-nio-8090-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:32:45 [http-nio-8090-exec-8] ERROR c.a.a.Services.UserService - User with DNI 87602 not found
+2024-05-14 23:32:47 [http-nio-8090-exec-10] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 876023
+2024-05-14 23:32:47 [http-nio-8090-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:32:47 [http-nio-8090-exec-10] ERROR c.a.a.Services.UserService - User with DNI 876023 not found
+2024-05-14 23:32:48 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 87602
+2024-05-14 23:32:48 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:32:48 [http-nio-8090-exec-2] ERROR c.a.a.Services.UserService - User with DNI 87602 not found
+2024-05-14 23:33:05 [http-nio-8090-exec-4] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 4639677
+2024-05-14 23:33:05 [http-nio-8090-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:33:05 [http-nio-8090-exec-4] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:35:20 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:35:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:35:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:35:28 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 32676 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:35:28 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:35:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:35:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:35:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:35:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:35:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:35:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:35:29 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:35:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 996 ms
+2024-05-14 23:35:29 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:35:29 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:35:29 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:35:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:35:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:35:29 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:35:30 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:35:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:35:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:35:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:35:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:35:30 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.835 seconds (JVM running for 3.201)
+2024-05-14 23:36:28 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:36:28 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:36:28 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 23:36:28 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 4639677
+2024-05-14 23:36:28 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:36:28 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:39:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:39:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:39:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:40:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.apirest.api_management.ApiManagementApplicationTests], using SpringBootContextLoader
+2024-05-14 23:40:00 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.apirest.api_management.ApiManagementApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-05-14 23:40:00 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.apirest.api_management.ApiManagementApplicationTests]: ApiManagementApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-14 23:40:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.apirest.api_management.ApiManagementApplication for test class com.apirest.api_management.ApiManagementApplicationTests
+2024-05-14 23:40:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-05-14 23:40:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@dfddc9a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b9df8a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5e8ac0e1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@aafcffa, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6955cb39, org.springframework.test.context.support.DirtiesContextTestExecutionListener@235a0c16, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2b5f4d54, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5f7b97da, org.springframework.test.context.event.EventPublishingTestExecutionListener@18b0930f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6b7906b3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3a1dd365, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@395b56bb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@256f8274, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@68044f4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@52d239ba]
+2024-05-14 23:40:01 [main] INFO  c.a.a.ApiManagementApplicationTests - Starting ApiManagementApplicationTests using Java 17.0.9 on DESKTOP-HM75IRF with PID 26972 (started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:40:01 [main] INFO  c.a.a.ApiManagementApplicationTests - No active profile set, falling back to default profiles: default
+2024-05-14 23:40:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:40:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:40:02 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:40:02 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:40:03 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:40:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:40:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:40:03 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:40:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:40:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:40:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:40:05 [main] INFO  c.a.a.ApiManagementApplicationTests - Started ApiManagementApplicationTests in 4.989 seconds (JVM running for 6.3)
+2024-05-14 23:40:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.apirest.api_management.Repositories.UserRepositoryTest], using SpringBootContextLoader
+2024-05-14 23:40:06 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.apirest.api_management.Repositories.UserRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-05-14 23:40:06 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.apirest.api_management.Repositories.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-14 23:40:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.apirest.api_management.ApiManagementApplication for test class com.apirest.api_management.Repositories.UserRepositoryTest
+2024-05-14 23:40:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-05-14 23:40:06 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@52a3eef8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37d8562f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@19656e21, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@614ae4eb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2cd31214, org.springframework.test.context.support.DirtiesContextTestExecutionListener@594f508f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b6939e1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5d32f5db, org.springframework.test.context.event.EventPublishingTestExecutionListener@69c51fdb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4aadf144, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@68a97fc1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@227fc322, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@63053b71, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4687c184, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@65f3f9e2]
+2024-05-14 23:40:06 [main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:40:06 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, name, surnames) 
+    values
+        (?, ?, ?)
+2024-05-14 23:40:06 [main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:40:06 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, name, surnames) 
+    values
+        (?, ?, ?)
+2024-05-14 23:40:06 [main] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:40:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:40:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:40:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:41:37 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 7136 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:41:37 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:41:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:41:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:41:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:41:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:41:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:41:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:41:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:41:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 982 ms
+2024-05-14 23:41:38 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:41:38 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:41:38 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:41:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:41:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:41:38 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:41:39 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:41:39 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:41:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:41:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:41:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:41:39 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.898 seconds (JVM running for 3.282)
+2024-05-14 23:41:47 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:41:47 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:41:47 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-14 23:41:47 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 4639677
+2024-05-14 23:41:48 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:41:48 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:44:40 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:44:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:44:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:44:49 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 14972 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:44:49 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:44:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:44:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:44:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:44:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:44:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:44:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:44:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:44:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 982 ms
+2024-05-14 23:44:50 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:44:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:44:51 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:44:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:44:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:44:51 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:44:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:44:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:44:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:44:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:44:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:44:52 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.83 seconds (JVM running for 3.194)
+2024-05-14 23:44:57 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:44:57 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:44:57 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 23:44:57 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 4639677
+2024-05-14 23:44:57 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:44:57 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:47:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:47:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:47:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:47:11 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 29868 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:47:11 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:47:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:47:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:47:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:47:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:47:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:47:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:47:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:47:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 994 ms
+2024-05-14 23:47:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:47:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:47:13 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:47:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:47:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:47:13 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:47:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:47:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:47:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:47:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:47:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:47:14 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.866 seconds (JVM running for 3.238)
+2024-05-14 23:48:29 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:48:29 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:48:29 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 23:48:29 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 4639677
+2024-05-14 23:48:29 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:48:29 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while deleting User: No converter found capable of converting from type [com.apirest.api_management.entities.User] to type [com.apirest.api_management.DTOs.UserDTO]
+2024-05-14 23:53:27 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:53:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 23:53:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 23:54:51 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 25592 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-14 23:54:51 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-14 23:54:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-14 23:54:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2024-05-14 23:54:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-14 23:54:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:54:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 23:54:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-14 23:54:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 23:54:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 980 ms
+2024-05-14 23:54:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-14 23:54:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-14 23:54:52 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-14 23:54:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 23:54:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 23:54:52 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-14 23:54:53 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-14 23:54:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-14 23:54:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-14 23:54:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-14 23:54:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-14 23:54:53 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 2.837 seconds (JVM running for 3.206)
+2024-05-14 23:55:47 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 23:55:47 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 23:55:47 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 23:55:47 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 4639677
+2024-05-14 23:55:47 [http-nio-8090-exec-2] INFO  c.a.a.Services.UserService - Attempting to delete user with DNI: 4639677
+2024-05-14 23:55:47 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:55:47 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        users 
+    where
+        id=?
+2024-05-14 23:55:47 [http-nio-8090-exec-2] INFO  c.a.a.Services.UserService - User with DNI 4639677 deleted successfully
+2024-05-14 23:55:47 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 4639677
+2024-05-14 23:56:31 [http-nio-8090-exec-3] INFO  c.a.a.Controllers.UserController - Received request to delete User whith dni: 876026
+2024-05-14 23:56:31 [http-nio-8090-exec-3] INFO  c.a.a.Services.UserService - Attempting to delete user with DNI: 876026
+2024-05-14 23:56:31 [http-nio-8090-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.name as name3_2_,
+        user0_.surnames as surnames4_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-14 23:56:31 [http-nio-8090-exec-3] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        users 
+    where
+        id=?
+2024-05-14 23:56:31 [http-nio-8090-exec-3] INFO  c.a.a.Services.UserService - User with DNI 876026 deleted successfully
+2024-05-14 23:56:31 [http-nio-8090-exec-3] INFO  c.a.a.Controllers.UserController - User deleted successfully whith  dni: 876026

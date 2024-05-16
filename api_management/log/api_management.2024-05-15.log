@@ -1,0 +1,267 @@
+2024-05-15 22:16:18 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 15116 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-15 22:16:18 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-15 22:16:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-15 22:16:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2024-05-15 22:16:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-15 22:16:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:16:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-15 22:16:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-15 22:16:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-15 22:16:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1057 ms
+2024-05-15 22:16:20 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-15 22:16:20 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-15 22:16:20 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-15 22:16:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-15 22:16:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-15 22:16:20 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-15 22:16:21 [main] DEBUG org.hibernate.SQL - 
+    
+    alter table users 
+       add column id_user bigint not null
+2024-05-15 22:16:21 [main] DEBUG org.hibernate.SQL - 
+    
+    alter table users 
+       drop index UK_ky0me7esyqdm5eajjethq1rqp
+2024-05-15 22:16:21 [main] DEBUG org.hibernate.SQL - 
+    
+    alter table users 
+       add constraint UK_ky0me7esyqdm5eajjethq1rqp unique (id_user)
+2024-05-15 22:16:21 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-15 22:16:21 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:16:21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-15 22:16:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:16:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-15 22:16:21 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 3.235 seconds (JVM running for 3.669)
+2024-05-15 22:16:26 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:16:26 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:16:26 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-15 22:16:26 [http-nio-8090-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2024-05-15 22:17:12 [http-nio-8090-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2024-05-15 22:19:10 [http-nio-8090-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2024-05-15 22:20:32 [http-nio-8090-exec-9] INFO  c.a.a.Controllers.UserController - Received request to save User: UserDTO{userId = , userName = John, userSurname = Doe, userDni = 12345678, userEmail = john.doe@example.com}
+2024-05-15 22:20:32 [http-nio-8090-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.email as email3_2_,
+        user0_.id_user as id_user4_2_,
+        user0_.name as name5_2_,
+        user0_.surnames as surnames6_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-15 22:20:32 [http-nio-8090-exec-9] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, email, id_user, name, surnames) 
+    values
+        (?, ?, ?, ?, ?)
+2024-05-15 22:20:32 [http-nio-8090-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+2024-05-15 22:20:32 [http-nio-8090-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'userID' doesn't have a default value
+2024-05-15 22:20:32 [http-nio-8090-exec-9] ERROR c.a.a.Controllers.UserController - Error ocurred while saving User: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2024-05-15 22:41:43 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:41:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-15 22:41:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-15 22:41:54 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 3016 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-15 22:41:54 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-15 22:41:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-15 22:41:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2024-05-15 22:41:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-15 22:41:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:41:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-15 22:41:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-15 22:41:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-15 22:41:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1038 ms
+2024-05-15 22:41:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-15 22:41:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-15 22:41:56 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-15 22:41:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-15 22:41:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-15 22:41:56 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-15 22:41:56 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-15 22:41:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:41:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-15 22:41:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:41:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-15 22:41:57 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 3.014 seconds (JVM running for 3.406)
+2024-05-15 22:44:02 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:44:02 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:44:02 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-15 22:44:02 [http-nio-8090-exec-1] INFO  c.a.a.Controllers.UserController - Received request to save User: UserDTO{userId = , userName = John, userSurname = Doe, userDni = 12345678, userEmail = john.doe@example.com}
+2024-05-15 22:44:02 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.email as email3_2_,
+        user0_.userid as userid4_2_,
+        user0_.name as name5_2_,
+        user0_.surnames as surnames6_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-15 22:44:02 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, email, userid, name, surnames) 
+    values
+        (?, ?, ?, ?, ?)
+2024-05-15 22:44:02 [http-nio-8090-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+2024-05-15 22:44:02 [http-nio-8090-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'id_user' doesn't have a default value
+2024-05-15 22:44:02 [http-nio-8090-exec-1] ERROR c.a.a.Controllers.UserController - Error ocurred while saving User: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2024-05-15 22:44:52 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:44:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-15 22:44:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-15 22:44:58 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 33616 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-15 22:44:58 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-15 22:44:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-15 22:44:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2024-05-15 22:44:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-15 22:44:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:44:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-15 22:44:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-15 22:44:59 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-15 22:44:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1030 ms
+2024-05-15 22:45:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-15 22:45:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-15 22:45:00 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-15 22:45:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-15 22:45:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-15 22:45:00 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-15 22:45:00 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-15 22:45:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:45:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-15 22:45:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:45:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-15 22:45:01 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 3.028 seconds (JVM running for 3.403)
+2024-05-15 22:45:06 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:45:06 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:45:06 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-15 22:45:06 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to save User: UserDTO{userId = , userName = John, userSurname = Doe, userDni = 12345678, userEmail = john.doe@example.com}
+2024-05-15 22:45:06 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.email as email3_2_,
+        user0_.userid as userid4_2_,
+        user0_.name as name5_2_,
+        user0_.surnames as surnames6_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-15 22:45:06 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, email, userid, name, surnames) 
+    values
+        (?, ?, ?, ?, ?)
+2024-05-15 22:45:06 [http-nio-8090-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+2024-05-15 22:45:06 [http-nio-8090-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'id_user' doesn't have a default value
+2024-05-15 22:45:06 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while saving User: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2024-05-15 22:45:40 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:45:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-15 22:45:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-15 22:45:59 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 12052 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-15 22:45:59 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-15 22:45:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-15 22:46:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2024-05-15 22:46:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-15 22:46:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:46:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-15 22:46:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-15 22:46:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-15 22:46:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1057 ms
+2024-05-15 22:46:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-15 22:46:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-15 22:46:00 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-15 22:46:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-15 22:46:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-15 22:46:01 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-15 22:46:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-15 22:46:01 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:46:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-15 22:46:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:46:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-15 22:46:02 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 3.061 seconds (JVM running for 3.444)
+2024-05-15 22:46:52 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:46:52 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:46:52 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-15 22:46:52 [http-nio-8090-exec-1] INFO  c.a.a.Controllers.UserController - Received request to save User: UserDTO{userId = , userName = John, userSurname = Doe, userDni = 12345678, userEmail = john.doe@example.com}
+2024-05-15 22:46:52 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.email as email3_2_,
+        user0_.userid as userid4_2_,
+        user0_.name as name5_2_,
+        user0_.surnames as surnames6_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-15 22:46:52 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, email, userid, name, surnames) 
+    values
+        (?, ?, ?, ?, ?)
+2024-05-15 22:46:52 [http-nio-8090-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+2024-05-15 22:46:52 [http-nio-8090-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'id_user' doesn't have a default value
+2024-05-15 22:46:52 [http-nio-8090-exec-1] ERROR c.a.a.Controllers.UserController - Error ocurred while saving User: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2024-05-15 22:49:10 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:49:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-15 22:49:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-15 22:49:18 [main] INFO  c.a.a.ApiManagementApplication - Starting ApiManagementApplication using Java 17.0.9 on DESKTOP-HM75IRF with PID 29220 (C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management\target\classes started by Samuel Núñez Pulido in C:\Users\Samuel Núñez Pulido\Desktop\api_management\api_management)
+2024-05-15 22:49:18 [main] INFO  c.a.a.ApiManagementApplication - No active profile set, falling back to default profiles: default
+2024-05-15 22:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-15 22:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2024-05-15 22:49:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2024-05-15 22:49:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:49:19 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-15 22:49:19 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-15 22:49:19 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-15 22:49:19 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1101 ms
+2024-05-15 22:49:19 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-15 22:49:19 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2024-05-15 22:49:19 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-15 22:49:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-15 22:49:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-15 22:49:20 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-15 22:49:20 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-15 22:49:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 22:49:21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-15 22:49:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2024-05-15 22:49:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2024-05-15 22:49:21 [main] INFO  c.a.a.ApiManagementApplication - Started ApiManagementApplication in 3.527 seconds (JVM running for 3.914)
+2024-05-15 22:49:38 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:49:38 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:49:38 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-15 22:49:38 [http-nio-8090-exec-2] INFO  c.a.a.Controllers.UserController - Received request to save User: UserDTO{userId = , userName = John, userSurname = Doe, userDni = 12345678, userEmail = john.doe@example.com}
+2024-05-15 22:49:38 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        user0_.id as id1_2_,
+        user0_.dni as dni2_2_,
+        user0_.email as email3_2_,
+        user0_.userid as userid4_2_,
+        user0_.name as name5_2_,
+        user0_.surnames as surnames6_2_ 
+    from
+        users user0_ 
+    where
+        user0_.dni=?
+2024-05-15 22:49:38 [http-nio-8090-exec-2] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (dni, email, userid, name, surnames) 
+    values
+        (?, ?, ?, ?, ?)
+2024-05-15 22:49:38 [http-nio-8090-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+2024-05-15 22:49:38 [http-nio-8090-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'id_user' doesn't have a default value
+2024-05-15 22:49:38 [http-nio-8090-exec-2] ERROR c.a.a.Controllers.UserController - Error ocurred while saving User: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement

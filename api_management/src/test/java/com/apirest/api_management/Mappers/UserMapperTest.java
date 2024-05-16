@@ -34,7 +34,7 @@ public class UserMapperTest {
         User user = new User();
         user.setName("Samuel");
         user.setSurnames("Pulido");
-        user.setDni(123456789L);
+        user.setDni("123456789L");
 
         // Act (Acción: ejecutar el método que se va a probar)
         UserDTO userDTO = userMapper.userToUserDTO(user);
@@ -53,7 +53,7 @@ public class UserMapperTest {
         UserDTO userDTO = new UserDTO();
         userDTO.setUserName("Sergio");
         userDTO.setUserSurnames("Nunez");
-        userDTO.setUserDni(987654321L);
+        userDTO.setUserDni("987654321L");
 
         User user = userMapper.userDTOToUser(userDTO);
 

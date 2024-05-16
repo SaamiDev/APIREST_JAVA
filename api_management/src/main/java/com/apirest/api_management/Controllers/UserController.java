@@ -4,13 +4,12 @@ package com.apirest.api_management.Controllers;
 import com.apirest.api_management.DTOs.UserDTO;
 import com.apirest.api_management.Mappers.UserMapper;
 import com.apirest.api_management.Services.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 @RestController
@@ -22,6 +21,8 @@ public class UserController {
 
     @Autowired
     private UserMapper userMapper;
+
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
 
     /**
@@ -39,14 +40,62 @@ public class UserController {
      */
     @PostMapping("/save")
     public ResponseEntity<UserDTO> saveUser(@RequestBody UserDTO userDTO) {
+            logger.info("Received request to save User: {}", userDTO);
             try {
                 UserDTO newUserDTO = userService.saveUser(userDTO);
+                logger.info("User saved successfully: {}", userDTO);
                 return new ResponseEntity<>(newUserDTO, HttpStatus.CREATED);
             } catch (IllegalArgumentException e)  {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
             } catch (Exception e) {
-                throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Ocurrió un error al procesar la solicitud", e);
+                logger.error("Error ocurred while saving User: {}", e.getMessage());
+                throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error occurred while processing the request", e);
             }
+
+    }
+
+
+    /**
+     * Elimina un usuario basado en su DNI.
+     *
+     * @param dni El DNI del usuario que se desea eliminar.
+     * @return ResponseEntity con el estado HTTP adecuado.
+     *         - {@code 204 No Content} si el usuario fue eliminado exitosamente.
+     *         - {@code 400 Bad Request} si el usuario no existe o el DNI es inválido.
+     *         - {@code 500 Internal Server Error} si ocurre un error en el servidor.
+     * @throws ResponseStatusException si ocurre un error durante el proceso de eliminación.
+     */
+    @DeleteMapping("/delete/{idUser}")
+    public ResponseEntity<Void> deleteUser(@PathVariable String IdUser) {
+        logger.info("Received request to delete User whith idUser: {}", IdUser);
+        try {
+            userService.deleteUser(IdUser);
+            logger.info("User deleted successfully whith idUser: {}", IdUser);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (IllegalArgumentException e) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
+        } catch (Exception e) {
+            logger.error("Error ocurred while deleting User: {}", e.getMessage());
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error occurred while processing the request", e);
+        }
+    }
+
+
+
+    @GetMapping("/get/{idUser}")
+    public ResponseEntity<UserDTO> getUser(@PathVariable String idUser) {
+
+        logger.info("Received request to get User whith id: {}", idUser);
+        try {
+            UserDTO getUserDTO = userService.getUserById(idUser);
+            logger.info("User achieved successfully: {}");
+            return new ResponseEntity<>(getUserDTO, HttpStatus.CREATED);
+        } catch (IllegalArgumentException e) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
+        } catch (Exception e) {
+            logger.error("Error ocurred while getting User: {}");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error occurred while processing the request", e);
+        }
 
     }
 

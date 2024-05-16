@@ -11,6 +11,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "userID", unique = true, updatable = false, nullable = false)
+    private Long idUser;
+
     @Column(name = "name")
     private String name;
 
@@ -18,7 +21,26 @@ public class User {
     private String surnames;
 
     @Column(name = "dni")
-    private Long dni;
+    private String dni;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Long getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(Long idUser) {
+        this.idUser = idUser;
+    }
+
+    @Column(name = "email")
+    private String email;
 
     public Long getId() {
         return id;
@@ -26,6 +48,13 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    protected void setCustomUserId() { idUser = System.currentTimeMillis(); }
+
+    @PrePersist
+    private void onCreate() {
+        setCustomUserId();
     }
 
     public String getName() {
@@ -44,11 +73,11 @@ public class User {
         this.surnames = surnames;
     }
 
-    public Long getDni() {
+    public String getDni() {
         return dni;
     }
 
-    public void setDni(Long dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 

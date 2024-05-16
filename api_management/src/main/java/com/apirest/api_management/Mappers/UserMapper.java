@@ -25,9 +25,11 @@ public interface UserMapper {
      */
 
     @SuppressWarnings("unmappedTargetProperties")
+    @Mapping(target = "userId", source = "idUser")
     @Mapping(target = "userName", source = "name")
     @Mapping(target = "userSurnames", source = "surnames")
     @Mapping(target = "userDni", source = "dni")
+    @Mapping(target = "userEmail", source = "email")
     UserDTO userToUserDTO(User user);
 
     /**
@@ -36,9 +38,11 @@ public interface UserMapper {
      * @param userDTO El objeto UserDTO a convertir.
      * @return El User resultante.
      */
+    @Mapping(target = "idUser", source = "userId")
     @Mapping(target = "name", source = "userName")
     @Mapping(target = "surnames", source = "userSurnames")
     @Mapping(target = "dni", source = "userDni")
+    @Mapping(target = "email", source = "userEmail")
     User userDTOToUser(UserDTO userDTO);
 
 }
